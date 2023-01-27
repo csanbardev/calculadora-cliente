@@ -1,0 +1,82 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+#contenedor-principal, #contenedor-botones{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#contenedor-principal{
+  background: #999999;
+  width: 20%;
+  height: 25rem;
+  padding: 1rem;
+}
+#contenedor-resultado{
+  height: 20%;
+  margin-bottom: 1rem;
+}
+
+#contenedor-botones{
+  background: #cccccc;
+  height: 80%;
+}
+
+#contenedor-botones > .fila > button{
+  margin: .3rem;
+}
+
+
+.fila{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.fila > button, input{
+  width: 100%;
+}
+
+/* Estilos de los botones */
+button{
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bt-operador{
+  background-color: #2b78e4;
+  color: white;
+}
+#bt-negativo{
+  background-color: #ff9900;
+}
+#bt-limpiar{
+  background-color: #cf2a27;
+  color: white;
+}
+#bt-punto{
+  background-color: black;
+  color: white;
+}
+#bt-igual{
+  background-color: #009e0f;
+  color: white;
+}
+
+/* Estilo del input de resultado */
+#contenedor-resultado input {
+  text-align: right;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-right:.5rem;
+}
